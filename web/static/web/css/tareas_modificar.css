@@ -1,0 +1,37 @@
+article{
+    flex: 1; /* para q ocupe todo el espacio*/
+
+}
+
+article form{
+    background-color: azure;
+    padding:50px 25px;
+    height: 50vh;
+}
+
+form p { /*recordemos q usamos el form.as_p */
+    padding:10px;
+    background-color: rgb(240, 240, 209);
+
+    margin: 10px 0;
+
+    display:flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+form p{
+    height: 30px;
+}
+/* afectamos el botón */
+form input[type="submit"]{
+    background-color: rgb(6, 90, 17);
+
+    padding: 5px;
+    width: 70px;
+    height: 25px;
+
+    margin:10px;
+    color:white;
+    font-weight: bold;
+}

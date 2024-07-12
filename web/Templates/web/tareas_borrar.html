@@ -1,0 +1,19 @@
+{%extends 'web/base.html'%}
+{%load static%}
+{%block title%}Borrar Receta{%endblock%}
+{%block section_title%}Borrar Receta{%endblock%}
+{%block estilo_css%}
+    <link rel="stylesheet" href="{% static 'tareas_borrar.css' %}">
+{%endblock%}
+
+{%block main%}
+  <h3>Borrar Receta</h3>
+  <form method="post">
+
+      {% csrf_token %}
+      <p>Estás segur@ de querer borrar: '<b>{{object}}</b>'?</p>
+      {{form}}
+      <input type="Submit" value="Confirm">
+    </form>
+    
+{%endblock%}

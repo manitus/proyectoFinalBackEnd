@@ -1,0 +1,21 @@
+{%extends 'web/base.html'%}
+{%load static%}
+{%block title%}Modificar Receta{%endblock%}
+{%block section_title%}Modificar Receta{%endblock%}
+{%block estilo_css%}
+    <link rel="stylesheet" href="{% static 'web/css/tareas_modificar.css' %}">
+{%endblock%}
+
+{%block main%}
+<article>
+    <h3>Datos de la receta</h3>
+    <form method="post">
+
+        {% csrf_token %}
+        {{form.as_p}}  
+        <input type="submit" value="Modificar">    
+    </form>
+</article>
+
+{%endblock%}
+

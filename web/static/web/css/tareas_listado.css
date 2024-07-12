@@ -1,0 +1,55 @@
+section{
+    background-color: rgb(228, 241, 241);
+
+    flex:1;
+    /* width: 100%; */
+
+    padding:15px;
+
+}
+h3 span{
+    font-weight: 500;
+}
+
+.fecha{
+    font-weight: 100;
+}
+section article{
+
+    background-color: azure;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 15px 0; 
+
+
+
+}
+.acciones{
+    background-color: rgb(214, 180, 245);
+    padding:12px;
+}
+
+section article .acciones a{
+    padding:10px;
+    background-color: white;
+
+    display: inline-block; /*pa poder meterle un ancho*/
+    width:85px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+    margin:0 10;
+
+    transition: all 0.2s;
+}
+section article .acciones a:hover{
+    color: white;
+    background-color: rgb(185, 174, 174);    
+}

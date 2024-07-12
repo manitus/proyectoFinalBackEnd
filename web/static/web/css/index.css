@@ -1,0 +1,9 @@
+.descripcion{
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(110, 107, 107);
+}
+

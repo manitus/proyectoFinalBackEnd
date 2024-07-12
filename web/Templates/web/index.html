@@ -1,0 +1,13 @@
+{%extends 'web/base.html'%}
+{%load static%}
+{%block title%} Bienvenida {%endblock%}
+{%block estilo_css%}
+    <link rel="stylesheet" href="{% static 'web/css/index.css' %}">
+{%endblock%}
+{%block section_title%}Delicatessen{%endblock%}
+{%block main%}
+<p class="descripcion">Este es el sector para gestionar las recetas que nos envían</p>
+    <p >Argentina {{fecha_hoy}} 2024</p>
+{%endblock%}
+
+

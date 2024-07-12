@@ -1,0 +1,41 @@
+{%extends 'web/base.html'%}
+{%load static%}
+{%block title%}Listado de tareas{%endblock%}
+{%block section_title%}Listado de recetas {%endblock%}
+{%block estilo_css%}
+    <link rel="stylesheet" href="{% static 'web/css/tareas_listado.css' %}">
+{%endblock%}
+
+{%block main%}
+
+    <section>
+
+        {%for tarea in tareas_listado%}
+        <article>
+            <div class="receta">
+                <h3>{{tarea.titulo}} - <span>[{{tarea.categoria}}]</span></h3>
+
+                <p >{{tarea.descripcion}}</p>
+                <p>{{tarea.fecha_fin}}</p>
+            </div>
+            <div class="acciones">
+
+                <a href="{% url 'tareas_detalle_receta' pk=tarea.id %}">Ver</a>
+                <a href="{% url 'tareas_modificar' pk=tarea.id %}">Modificar</a>
+                <a href="{% url 'tareas_borrar' pk=tarea.id %}">Borrar</a>
+            </div>
+
+        </article>
+        {%empty%}
+        <article>
+            no hay tareas cargadas aún
+
+        </article>
+        {%endfor%}
+    </section>
+    
+{%endblock%}
+
+
+
+
